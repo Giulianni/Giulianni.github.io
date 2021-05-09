@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.descuento {
+    background-color: var(--advertise-color);
+    font-size: 24px;
+    padding: 1px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+header {
+    background-color: var(--primary-color);
+    box-shadow: 0 10px 7px rgb(0 0 0 / 25%);
+    color: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+header h1, img{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+header img {
+    width: 150px;
+    height: 130px;
+    margin-left: 20px;
+}
+form {
+     padding-top: 20px;
+     display:block;
+}
+.contenedor-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.formulario  {
+    margin-top: 40px;
+    width:100%;
+    text-align: center;
+}
+
+h3{
+    color: #333333;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 72px;
+    
+    /*text-align: center;*/ 
+}
+
+input{
+        text-align: left;
+        padding: 10px;
+        border-radius: 23.011px;
+        border: solid 1.5px black;
+        /*display: block;*/
+        width: 100%;
+        margin-bottom:30px;
+}
+
+select {
+    text-align: left;
+        padding: 10px;
+        border-radius: 23.011px;
+        border: solid 1.5px black;
+        display: block;
+        width: 100%;
+        margin-bottom:30px;
+}
+    
+
+
+.button-resetear-registro{
+    /*position: absolute;*/
+    text-align: center;
+    width: 300px;
+    height: 53.79px;
+    left: 410px;
+    top: 809px;
+    background:  #888888;;
+    border-radius: 23.011px;
+
+}
+.button-entrar {
+    /*position: absolute;*/
+    text-align: center;
+    width: 300px;
+    height: 53.79px;
+    left: 730px;
+    top: 809px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+
+}
+
+
+.atajo-registro {
+    text-align: center;
+}
+
+
+
+
+
+
+
+

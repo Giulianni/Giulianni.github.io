@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('./login.css');
+@import url('./contacto.css');
+@import url('./registro.css');
+@import url('./window.css');
+
+:root {
+    --primary-color: #00669F;
+    --primary-color-lighter: #3b7da3;
+    --primary-color-darker: #001D2D;
+    --secondary-color: #1CD1B0;
+    --secondary-color-lighter: #a7eee1;
+    --advertise-color: #1CD1B0;
+    --heart-color: #CC2424;
+    --card-background-color: #F3F3F3;
+    --background-color: #fff;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family:'Roboto';
+    font-weight: normal;
+}
+
+header{
+    box-shadow: 0 3px 5px gray;
+    position: sticky;
+}
+
+nav {
+    background-color: #001D2D;   
+    color: white;   
+    font-size: 18px;  
+    text-align: right;   
+    justify-items: right;   
+    height: 40px;   
+    display: block;   
+    padding: 5px;   
+    position: sticky; 
+    
+
+}
+.nav-button{
+    color: #fff;   
+    text-align: right;  
+    text-decoration: none;   
+    font-size: 18px;   
+    padding: 5px;  
+    display: inline-block;
+   
+
+}
+
+
+.descuento {
+    background:#1CD1B0;
+    padding:10px;
+    font-size: 25px;
+    text-transform: capitalize; 
+}
+
+
+header h1 {
+    background: var(--primary-color);
+    padding: 22px 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.heroes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.card {
+    display: inline-block;
+    background-color: rgb(223, 223, 223);
+    height: 550px;
+    width: 400px;
+    margin: 40px; 
+    border-radius: 50px;
+}
+.card:hover {
+    transform: scale(1.1);
+    transition: 450ms;
+
+}
+.bg {
+    height: 200px;
+    border-radius:20px 20px 0 0 ;
+    background-size: cover; 
+    background-position: center;
+}
+
+#batman_bg {
+    background-image: url(../img/bg-batman.jpg);
+    
+}
+
+#mujerMaravilla_bg {
+    background-image: url(../img/bg-wonderw.jpg);
+}
+
+#superman_bg {
+    background-image: url(../img/bg-superman.jpg);
+}
+
+.fa-heart {
+    color: #CC2424;
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.contenido{
+    position:relative;
+    text-align: center;
+    height: 150px;
+}
+.contenido h2{
+    /*position: relative;*/
+    height: 100px;
+    padding-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.contenido img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 30%;
+    top: -70%;
+}
+
+.contenido p {
+    padding: 20px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    border-radius: 7px;
+    color: white;
+    text-decoration: none;
+    top: 40px;
+    padding: 15px 50px;
+ 
+}
+footer{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    margin-top:100px;
+    text-align: center;
+}
+
+
+

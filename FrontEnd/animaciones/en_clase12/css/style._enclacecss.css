@@ -57,9 +57,14 @@ nav ul li a::before{
   background: var(--decoration-color);
   position:absolute;
   bottom:-10px; 
- 
+  width: 0;
+  height: 5px;
+  transition: all 0.4s;
 }
-/* */
+
+nav ul li a:hover::before {
+  width: 100%;
+}
 
 
 /* Barra redes */
@@ -68,6 +73,19 @@ nav ul li a::before{
 	left: 0; 
 	top: calc(50% - 90px); /* Para que quede centrada le decimos que al 50% del alto le reste la mitad del alto de la barra: 16px de la letra + 10 padding-top + 10padding-bottom */
 	z-index: 2000; 
+  /*width 0;
+  height: 5ps
+  transition propiedad y tiempo*/
+}
+/*nav ul li a:hover::before{
+width: 100%
+
+}*/
+.social{
+  position:fixed;
+  left: 0;
+  top: 50%;
+  z-index: 2000;
 }
 .social ul {
 	list-style: none;
@@ -79,9 +97,13 @@ nav ul li a::before{
     background: var(--primary-color);
     padding: 10px 15px;
     text-decoration: none; 
+    transition: all 0.4s;
 }
-/* 
-*/
+
+.social ul li a:hover {
+  padding: 10px 30px;
+  background-color: var(--primary-color);
+}
 
 .social ul li .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
 .social ul li .icon-twitter {background: #00abf0;}
@@ -128,7 +150,15 @@ nav ul li a::before{
     border-right: 10px solid rgb(66,139,202);
     border-bottom: 10px solid rgb(202, 66, 129);
     border-left: 10px solid rgba(66,139,202,.2);
- 
+    animation: spinner 0.8s infinite linear;
  }
  
- 
+ @keyframes spinner {
+   from {
+      transform: rotate(0);
+   }
+   to {
+      transform: rotate(1turn);
+   }
+
+ }

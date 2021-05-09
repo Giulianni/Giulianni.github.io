@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script src="js/script.js"></script>
+    <title>Super Hero Cards</title>
+</head>
+
+<body>
+    <div class="descuento">
+        <p>20% de descuento!</p>
+    </div>
+    <header>
+        <img src="../img/logo.png" alt="Logo Tienda">
+        <h1>Cards Super Heroes</h1>
+    </header>
+    <nav>
+        <a class="nav-button" href="./login.html">Login</a>
+        <a class="nav-button" href="./registro.html">Registro</a>
+        <a class="nav-button" href="./contacto.html">Contacto</a>
+        
+    </nav>
+    <main>
+        <section class="heroes">
+            <div class="card">
+                <div class="bg" id="batman_bg">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="contenido">
+                    <img src="../img/batman.jpg" alt="Foto Batman">
+                    <h2>Batman</h2>
+                    <p>Bruce Wayne es el único personaje que se identifica como Batman y
+                        aparece en Batman, Detective Comics, Batman y Robin, y Batman: The Dark Knight.
+                        Dick Grayson vuelve al manto de Nightwing</p>
+                    <a class="button" href="https://pt.wikipedia.org/wiki/Batman">Ver más</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="bg" id="mujerMaravilla_bg">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="contenido">
+                    <img src="../img/ww.jpg" alt="Foto Mujer Maravilla">
+                    <h2>Mujer Maravilla</h2>
+                    <p>El personaje apareció como tal publicado por primera vez en la
+                        revista de historietas All Star Comics
+                        (de diciembre de 1941)1​ y con su alter-ego en el
+                        Sensation Comics</p>
+                    <a class="button" href="https://es.wikipedia.org/wiki/Mujer_Maravilla">Ver más</a>
+                  
+                </div>
+            </div>
+            <div class="card">
+                <div class="bg" id="superman_bg">
+                  <i class="fas fa-heart"></i>
+                </div>
+               
+                <div class="contenido">
+                    <img src="../img/sman.jpg" alt="Foto Superman">
+                    <h2>Superman</h2>
+                    <p>Superman nace en un mundo extraño a una especie tecnológicamente
+                        avanzada que se parece a los humanos. Poco después de nacer,
+                        su planeta se destruye en un cataclismo natural</p>
+                    <a class="button" href="https://es.wikipedia.org/wiki/Superman%22%3E">Ver más</a>
+                </div>
+            </div>
+        </section>
+      
+            <section>
+               
+               
+                <a href="#window-notice" onclick="setVisible('window-notice')">
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+          
+              <div class="window-notice" id="window-notice">
+          
+                  <div class="wrapper">
+                    
+                    <p onclick="setHidden('window-notice')" class="close">X</p>
+          
+                    <div class="row">
+                      <h3>Añadi tu super!</h3>
+                    </div>
+          
+                    <div class="row">
+                      <p>Agregá tu personaje favorito completando las opciones.</p>
+                    </div>
+          
+                    <form action="/registro" method="POST" onsubmit="setHidden('window-notice')">
+                      <div class="row">
+                        <div class="column">
+                          <label for="nombre" class="required">Nombre</label>
+                          <input type="text" name="nombre" id="nombre" placeholder="Raven"
+                            oninvalid="setCustomValidty('nombre')" required tabindex="1"/>
+          
+                          <label for="fecha">Fecha</label>
+                          <input type="date" name="fecha" id="fecha" tabindex="3">
+          
+                          <textarea type="descripcion" name="descripcion" id="descripcion"
+                            placeholder="Descripción del Superheroe" oninvalid="setCustomValidty('descripcion')"
+                            required tabindex="5" class="required"></textarea>
+                        </div>
+          
+                        <div class="column">
+                          <label for="especie" class="required">Especie</label>
+                          <select name="especie" required tabindex="2">
+                            <option value="" selected hidden>Especie</option>
+                            <option value="">Especie 1</option>
+                            <option value="">Especie 3</option>
+                            <option value="">Especie 4</option>
+                            <option value="">Especie 5</option>
+                          </select>
+          
+                          <label for="imagen" class="required">Agregar Foto</label>
+                          <input type="file" name="imagen" id="imagen" accept=".jpg, .jpeg, .png, .svg"
+                            oninvalid="setCustomValidty('imagen')" required tabindex="4"/>
+          
+                          <p>Poderes</p>
+                          
+                          <div class="block">
+                            <input type="checkbox" name="poderes" id="volar" value="volar" tabindex="6">
+                            <label for="volar" class="block">Volar</label>
+                          </div>
+                          
+                          <div class="block">
+                            <input type="checkbox" name="poderes" id="superInteligencia" value="superInteligencia" tabindex="7">
+                          <label for="imasuperInteligenciagen" class="block">SuperInteligencia</label>
+                          </div>
+                          
+                          <div class="block">
+                            <input type="checkbox" name="poderes" id="rayo-laser" value="rayo-laser" tabindex="8">
+                            <label for="rayo-laser" class="block">Vista de rayo láser</label>
+                          </div>
+          
+                          <div class="block">
+                            <input type="checkbox" name="poderes" id="billetera-gorda" value="billetera-gorda" tabindex="9">
+                            <label for="billetera-gorda" class="block">Billetera gorda</label>
+                          </div>
+          
+                          <span class="divisor-line"></span>
+          
+                          <p>Tipo de personaje</p>
+                          <div class="block">
+                            <input type="radio" name="tipo-personaje" id="heroe" value="heroe" tabindex="10">
+                            <label for="heroe" class="block">Héroe / Heroina</label>
+                          </div>
+          
+                          <div class="block">
+                            <input type="radio" name="tipo-personaje" id="villane" value="villane" tabindex="11">
+                            <label for="villane" class="block">Villano / Villana</label>  
+                          </div>
+          
+                        </div>
+                        <div class="row">
+                          <input type="submit" class="input-btn" value="Añadir" tabindex="12"/>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div> 
+             
+        </section>
+
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a Giulianni Nicoli</p>
+    </footer>
+</body>
+
+</html>

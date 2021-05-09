@@ -1,0 +1,23 @@
+.login-form{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.button-entrar {
+    /*position: absolute;*/
+    text-align: center;
+    width: 300px;
+    height: 53.79px;
+    left: 730px;
+    top: 809px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+
+}
+
+.bajar-footer {
+    margin-bottom: 200px;
+}

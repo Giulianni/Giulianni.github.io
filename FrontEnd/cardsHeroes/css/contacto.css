@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.descuento {
+    background-color: var(--advertise-color);
+    font-size: 24px;
+    padding: 1px;
+    margin: 0;
+    padding-left: 30px;
+}
+.nuevo-contacto{
+    width: 400px;
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+  
+}
+.formulario  {
+    margin-top: 40px;
+    margin-left: 0;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+h3{
+    color: #333333;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: lighter;
+    line-height: 72px;
+    /*text-align: center;*/ 
+}
+input{
+    text-align: left;
+    padding: 10px;
+    border-radius: 23.011px;
+    border: solid 1.5px black;
+    /*display: block;*/
+    width: 100%;
+    margin-bottom:30px;
+}
+textarea {
+    text-align: left;
+    padding: 10px;
+    border-radius: 23.011px;
+    border: solid 1.5px black;
+    display: block;
+    width: 100%;
+    margin-bottom:30px;
+}
+
+.button-resetear {
+ 
+    text-align: center;
+    width: 300px;
+    height: 53.79px;
+    left: 410px;
+    top: 809px;
+    background:  #888888;;
+    border-radius: 23.011px;
+    margin-left: 50px;
+
+}
+.button-enviar {
+ 
+    text-align: center;
+    width: 300px;
+    height: 53.79px;
+    left: 730px;
+    top: 809px;
+    background: #1CD1B0;
+    border-radius: 23.011px;
+    margin-left: 50px;
+
+}

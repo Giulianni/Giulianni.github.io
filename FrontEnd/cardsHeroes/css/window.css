@@ -1,0 +1,190 @@
+.window-notice input, 
+.window-notice textarea, 
+.window-notice select {
+    border-radius: 15px;
+    border: 0;
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 10px;
+ 
+}
+
+.window-notice input[type="date"] {
+    padding: 22px 10px;
+}
+
+.window-notice input:focus, 
+.window-notice textarea:focus, 
+.window-notice select:focus {
+    background-color: var(--primary-color-darker);
+    border: solid 4px var(--secondary-color);
+    color: var(--secondary-color);
+    outline: none;
+}
+
+.window-notice input[type="checkbox"]:checked~label,
+.window-notice input[type="radio"]:checked {
+    color: red;
+}
+
+.required::after {
+    color: rgb(255, 94, 0);
+    content: "*";
+    padding: 4px;
+}
+
+.window-notice input[type="checkbox"],
+.window-notice input[type="radio"] {
+    margin-right: 6px;
+    transform: scale(1.75);
+    margin-left: 15px;
+    width: auto;
+}
+
+.window-notice input[type="checkbox"]:checked~label,
+.window-notice input[type="radio"]:checked~label {
+    color: var(--secondary-color);
+}
+
+.window-notice form textarea {
+    height: 100%;
+    resize: none;
+}
+
+.window-notice {
+    background-color: rgba(0,0,0,.8);
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    padding: 50px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    z-index: 999;
+}
+
+.window-notice h3 {
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+.window-notice form p, .window-notice form label {
+    font-family: Roboto;
+    font-size: 24px;
+    padding: 10px 0;
+}
+
+.wrapper {
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 95%;
+    overflow-y: auto;
+    padding: 40px 85px;
+    position: relative;
+    width: 60%;
+}
+
+.wrapper::-webkit-scrollbar {
+  width: 20px;
+}
+
+.wrapper::-webkit-scrollbar-thumb {
+  background: var(--primary-color-darker);
+  border-radius: 14px;
+}
+
+.close {
+    left: 4%;
+    position: absolute;
+    top: 8%;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+p.close {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+p.close:hover {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: bold;
+    transition: color 1s;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex: 1;
+  margin: 20px;
+}
+
+.input-btn {
+    background-color: var(--secondary-color);
+    border-radius: 23px;
+    border: 0;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 44px;
+    margin: 0 25px;
+    padding: 15px 36px;
+    text-align: center;
+    text-decoration: none;
+    width: 400px;
+}
+
+.input-btn:hover {
+    background-color: var(--primary-color-darker);
+    color: var(--secondary-color);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.block {
+    display: block;
+}
+
+.block label {
+    display: inline-block;
+}
+
+.divisor-line {
+    border: 1px solid white;
+    margin: 30px 0;
+}
+
+.fa-plus-circle {
+    background-color:var(--background-color);
+    border-radius: 100%;
+    bottom: 15%;
+    color:  var(--primary-color); 
+    font-size: 30px;
+    padding: 18px;
+    position: fixed;
+    right: 1%;
+    z-index: 999;
+}
