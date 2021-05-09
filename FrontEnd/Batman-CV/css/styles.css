@@ -1,0 +1,73 @@
+header {
+    background-color: #dddddd;
+    text-align: center;
+    }
+    
+    h1 {
+        font-size: 21px;
+        color:#23497A;
+       word-spacing: 31px;
+       padding-top: 8px;
+       padding-bottom: 8px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        color: #642E2A;
+        text-align: left;
+    }
+    h1, h2 {
+        background-color: #BFBFBF;
+        text-transform: uppercase;
+        font-family: 'sans-serif';
+        letter-spacing: 8px;
+    }
+    
+    main {
+        margin-left: 330px;
+        margin-right: 330px;
+        margin-top: 45px;
+        margin-bottom: 45px;
+    }
+    
+    section {
+        font-family: 'calibri', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    ul{
+        text-transform: uppercase; 
+    }
+    
+    span{
+        font-style: italic;
+        font-weight: bolder;    
+    }
+    
+    footer {
+        background-color: #1F487C;
+        text-align: center;
+        padding-bottom: 2px;
+        color:white;
+    }
+    a:link, a:visited {
+        text-decoration: none;
+        color:white;
+        font-size: 20px;
+        font-family: 'calibri', Arial, Helvetica, sans-serif;
+    }
+    
+    footer img {
+        height: 17px;
+        padding-top: 4px;
+    }
+
+
+/* Valores a utilizar
+Fuente:  Calibri, Arial, Helvetica, sans-serif
+Header fondo: #dddddd
+h2 fondo: #BFBFBF
+h2 tamaño fuente: 18px
+footer color: #1F497D
+Footer tamaño fuente: 24px */
